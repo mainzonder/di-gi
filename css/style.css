@@ -10,6 +10,15 @@ html {
           box-sizing: inherit;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
 body {
   min-width: 320px;
   overflow-x: hidden;
@@ -17,6 +26,32 @@ body {
 
 .container {
   padding: 0 20px;
+}
+
+@media (min-width: 640px) {
+  .container {
+    padding: 0 30px;
+  }
+}
+
+@media (min-width: 768px) {
+  .container {
+    padding: 0 40px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 40px;
+  }
+}
+
+@media (min-width: 1440px) {
+  .container {
+    max-width: 1320px;
+  }
 }
 
 .header {
@@ -36,8 +71,26 @@ body {
           align-items: center;
 }
 
+@media (min-width: 640px) {
+  .header__inner {
+    min-height: 100px;
+  }
+}
+
 .logo__link {
   margin-left: 8px;
+}
+
+@media (min-width: 640px) {
+  .logo__link {
+    margin-left: 14px;
+  }
+}
+
+@media (min-width: 768px) {
+  .logo__link {
+    margin-left: 0px;
+  }
 }
 
 .menu__btn {
@@ -58,7 +111,30 @@ body {
   position: absolute;
   top: 15px;
   left: 14px;
-  -webkit-box-shadow: 0 4px 0 0 #2b4074;
-          box-shadow: 0 4px 0 0 #2b4074;
+  -webkit-box-shadow: 0 4px 0 0 #2b4074, 0 8px 0 0 #2b4074;
+          box-shadow: 0 4px 0 0 #2b4074, 0 8px 0 0 #2b4074;
+}
+
+@media (min-width: 1440px) {
+  .menu__btn {
+    margin-right: 90px;
+  }
+}
+
+.head {
+  background-image: url(../images/bg-slider.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  min-height: 193px;
+}
+
+.top-slider {
+  background: rgba(33, 33, 33, 0.5);
+}
+
+.top-slider__item {
+  color: #ffffff;
+  text-align: center;
 }
 /*# sourceMappingURL=style.css.map */
