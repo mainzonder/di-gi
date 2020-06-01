@@ -275,5 +275,24 @@ body {
     border: none;
     border-radius: 3px;
   }
+  .top-slider .slick-dots {
+    bottom: 50px;
+  }
+  .top-slider .slick-arrow {
+    width: 56px;
+    height: 56px;
+    border: none;
+    position: absolute;
+    right: 0;
+    z-index: 5;
+  }
+  .top-slider .slick-prev {
+    background-color: #2b4074;
+    top: calc(50% - 56px);
+  }
+  .top-slider .slick-next {
+    background-color: #f9f6e5;
+    bottom: calc(50% - 56px);
+  }
 }
 /*# sourceMappingURL=style.css.map */
