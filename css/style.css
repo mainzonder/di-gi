@@ -75,6 +75,7 @@ li {
 
 button {
   padding: 0;
+  cursor: pointer;
 }
 
 p {
@@ -412,6 +413,31 @@ body {
   }
   .call__text {
     margin-bottom: 0;
+  }
+}
+
+@media (min-width: 1024px) {
+  .call__box {
+    max-width: 695px;
+  }
+}
+
+@media (min-width: 1440px) {
+  .call__inner {
+    padding: 0 80px;
+  }
+  .call__box {
+    max-width: 796px;
+  }
+  .slick-arrow {
+    width: 70px;
+    height: 70px;
+  }
+  .slick-prev {
+    top: calc(50% - 70px);
+  }
+  .slick-next {
+    bottom: calc(50% - 70px);
   }
 }
 /*# sourceMappingURL=style.css.map */
