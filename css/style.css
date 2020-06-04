@@ -363,6 +363,16 @@ body {
     line-height: 26px;
     max-width: 886px;
   }
+  .top-slider .slick-arrow {
+    width: 70px;
+    height: 70px;
+  }
+  .top-slider .slick-prev {
+    top: calc(50% - 70px);
+  }
+  .top-slider .slick-next {
+    bottom: calc(50% - 70px);
+  }
 }
 
 .call {
@@ -429,15 +439,10 @@ body {
   .call__box {
     max-width: 796px;
   }
-  .slick-arrow {
-    width: 70px;
-    height: 70px;
-  }
-  .slick-prev {
-    top: calc(50% - 70px);
-  }
-  .slick-next {
-    bottom: calc(50% - 70px);
-  }
+}
+
+.services {
+  padding: 20px 0 40px;
+  text-align: center;
 }
 /*# sourceMappingURL=style.css.map */

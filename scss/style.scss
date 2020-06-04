@@ -1,69 +1,7 @@
 @import "vars";
 @import "fonts";
+@import "global";
 
-html {
-	box-sizing: border-box;
-}
-*,
-*::before,
-*::after {
-	box-sizing: inherit;
-}
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-	margin: 0;
-}
-ul,
-li {
-	padding: 0;
-	margin: 0;
-	list-style: none;
-}
-button {
-	padding: 0;
-	cursor: pointer;
-}
-p {
-	margin: 0;
-}
-body {
-	min-width: 320px;
-	overflow-x: hidden;
-	font-family: "Roboto-Regular", "Arial", "sans-serif";
-	font-weight: 400;
-	font-style: 16px;
-	line-height: 18px;
-}
-
-.container {
-	padding: 0 20px;
-}
-@media (min-width: 640px) {
-	.container {
-		padding: 0 30px;
-	}
-}
-@media (min-width: 768px) {
-	.container {
-		padding: 0 40px;
-	}
-}
-@media (min-width: 1024px) {
-	.container {
-		max-width: 1200px;
-		margin: 0 auto;
-		padding: 0 40px;
-	}
-}
-@media (min-width: 1440px) {
-	.container {
-		max-width: 1320px;
-	}
-}
 
 .header {
 	background-color: $accent;
@@ -290,6 +228,17 @@ body {
 			line-height: 26px;
 			max-width: 886px;
 		}
+
+		.slick-arrow {
+			width: 70px;
+			height: 70px;
+		}
+		.slick-prev {
+			top: calc(50% - 70px);
+		}
+		.slick-next {
+			bottom: calc(50% - 70px);
+		}
 	}
 }
 .call {
@@ -351,15 +300,8 @@ body {
 			max-width: 796px;
 		}
 	}
-
-	.slick-arrow {
-		width: 70px;
-		height: 70px;
-	}
-	.slick-prev {
-		top: calc(50% - 70px);
-	}
-	.slick-next {
-		bottom: calc(50% - 70px);
-	}
+}
+.services {
+	padding: 20px 0 40px;
+	text-align: center;
 }
