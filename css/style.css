@@ -3,6 +3,11 @@
   font-weight: 400;
 }
 
+.services__item-title, .services__item-link {
+  font-family: "RobotoCondensed-Bold";
+  font-weight: 700;
+}
+
 .call__title, .call__btn {
   font-family: "Roboto-Medium";
   font-weight: 500;
@@ -53,6 +58,11 @@
 .title {
   font-family: "RobotoCondensed-Regular";
   font-weight: 400;
+}
+
+.services__item-title, .services__item-link {
+  font-family: "RobotoCondensed-Bold";
+  font-weight: 700;
 }
 
 .call__title, .call__btn {
@@ -543,8 +553,8 @@ body {
 
 .services__text {
   color: #797979;
-  line-height: 24px;
-  font-size: 18px;
+  line-height: 15px;
+  font-size: 17px;
   margin-bottom: 40px;
 }
 
@@ -563,7 +573,38 @@ body {
           justify-content: center;
 }
 
+.services__item:last-child {
+  border-bottom: 1px solid #f9f6e5;
+}
+
+.services__item:hover .services__item-text,
+.services__item:hover .services__item-link {
+  display: block;
+}
+
+.services__item:hover .services__item-title {
+  margin-bottom: 30px;
+}
+
 .services__item-img {
   margin-bottom: 30px;
+}
+
+.services__item-title {
+  font-size: 16px;
+  line-height: 19px;
+  letter-spacing: 2px;
+  color: #4a4a4a;
+}
+
+.services__item-text {
+  display: none;
+  margin-bottom: 17px;
+}
+
+.services__item-link {
+  display: none;
+  letter-spacing: 2px;
+  color: #2b4074;
 }
 /*# sourceMappingURL=style.css.map */
