@@ -375,7 +375,7 @@
 }
 @media (min-width: 640px) {
 	.services {
-		padding: 24px 0 99px;
+		padding: 24px 0 0;
 		&__title {
 			margin-bottom: 20px;
 			&::after {
@@ -406,14 +406,16 @@
 		&__items {
 			display: flex;
 			flex-wrap: wrap;
+			margin: 0 30px;
 		}
 		&__item {
 			min-height: 310px;
 			width: 50%;
-			border: 1px solid $bg-color;
-			border-bottom: none;
+			&:nth-child(even) {
+				border-left: none;
+			}
 			&:last-child {
-				border-bottom: 1px solid $bg-color;
+				border-bottom: none;
 			}
 			&:hover {
 				.services__item-text,
@@ -444,7 +446,6 @@
 			line-height: 19px;
 			letter-spacing: 2px;
 			color: $text-color;
-			@extend %robotocondenced-700;
 		}
 		&__item-text {
 			display: none;
@@ -454,7 +455,6 @@
 			display: none;
 			letter-spacing: 2px;
 			color: $accent;
-			@extend %robotocondenced-700;
 			text-transform: uppercase;
 		}
 	}
