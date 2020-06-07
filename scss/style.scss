@@ -378,6 +378,7 @@
 		padding: 24px 0 0;
 		&__title {
 			margin-bottom: 20px;
+			padding-bottom: 0px;
 			&::after {
 				display: none;
 			}
@@ -406,10 +407,9 @@
 		&__items {
 			display: flex;
 			flex-wrap: wrap;
-			margin: 0 30px;
+			margin: 0 -30px;
 		}
 		&__item {
-			min-height: 310px;
 			width: 50%;
 			&:nth-child(even) {
 				border-left: none;
@@ -417,45 +417,39 @@
 			&:last-child {
 				border-bottom: none;
 			}
-			&:hover {
-				.services__item-text,
-				.services__item-link {
-					display: block;
-				}
-				.services__item-title {
-					margin-bottom: 30px;
-				}
-				.services__item-img {
-					margin-bottom: 14px;
-				}
-				.services__item-inner {
-					border: 4px solid $accent;
-					margin: 18px 0;
-					padding: 25px 20px 5px;
-					min-height: 277px;
-				}
-			}
 		}
-
-		&__item-img {
+	}
+}
+@media (min-width: 768px) {
+	.services {
+		padding: 50px 0 0;
+		&__title {
 			margin-bottom: 30px;
 		}
-
-		&__item-title {
-			font-size: 16px;
-			line-height: 19px;
-			letter-spacing: 2px;
-			color: $text-color;
+		&__descr {
+			text-align: left;
+			&::after {
+				margin-left: 0;
+			}
 		}
-		&__item-text {
-			display: none;
-			margin-bottom: 17px;
+		&__text {
+			margin-bottom: 27px;
+			text-align: left;
 		}
-		&__item-link {
-			display: none;
-			letter-spacing: 2px;
-			color: $accent;
-			text-transform: uppercase;
+		&__items {
+			margin: 0 -40px;
+		}
+		&__item {
+			padding: 0 65px;
+			min-height: 334px;
+			&:hover {
+				padding: 18px;
+				.services__item-inner {
+					margin: 18px 0;
+					padding: 35px 60px 5px;
+					min-height: 288px;
+				}
+			}
 		}
 	}
 }
